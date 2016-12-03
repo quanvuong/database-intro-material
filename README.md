@@ -7,3 +7,6 @@ The final goal is have the understanding to implement a simple database manageme
 
 Lecture 1: Mainly terminilogies 
 Lecture 2: Why Relational Algebra is useful, fundamental operations for database and additional operators. 
+
+
+Thanks to Kenny Song for discovery of the material
