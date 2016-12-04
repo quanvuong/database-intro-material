@@ -3,7 +3,7 @@ My own collections of intro material to database, because it seems so hard to fi
 
 The final goal are the understanding to implement a simple database management system and good grasp of SQL syntax.
 
-**1. Caltech CS121:** http://users.cms.caltech.edu/~donnie/cs121/
+**1. Caltech CS121:** http://users.cms.caltech.edu/~donnie/cs121/**
 
 **Lecture 1: Terminologies.**
 
