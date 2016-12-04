@@ -79,4 +79,20 @@ Additional operations:
 
 - Assignment: persists, unlike rename operations 
 
- 
+**Lecture 3: More advanced operations.**
+
+Generalized projection: generate result that doesn't appear as an attribute in the original relation
+
+Aggregate function: sum, avg, count, min, max (-distinct)
+
+Grouping and Aggregation: group then perform aggregate 
+
+Outer join: left, right, full (padding missing values as null) 
+
+Each relational operation has different behavior with respect to null
+
+Constant relation can be used to add new tuple to relation 
+
+Update: usually use generalized projection 
+
+Summary: relationship algebra is procedural and verbose, useful because it can be reasoned about 
