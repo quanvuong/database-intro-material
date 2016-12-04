@@ -5,7 +5,7 @@ The final goal are the understanding to implement a simple database management s
 
 **1. Caltech CS121:** http://users.cms.caltech.edu/~donnie/cs121/**
 
-**Lecture 1: Terminologies.**
+**Lecture 1: Terminologies.
 
 Database - organized collection of information.
 
@@ -41,7 +41,7 @@ Foreign key: One relation schema can cindlue the attributes of another schema's 
 
 Referential integrity: two dependent relations is called referential integrity. Every foreign key must have a corresponding primary key value
 
-**Lecture 2: Why Relational Algebra is useful, fundamental operations for database and additional operators. **
+**Lecture 2: Why Relational Algebra is useful, fundamental operations for database and additional operators.
 
 Query language: specified how to access data
 
