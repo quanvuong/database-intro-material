@@ -96,3 +96,54 @@ Constant relation can be used to add new tuple to relation
 Update: usually use generalized projection 
 
 Summary: relationship algebra is procedural and verbose, useful because it can be reasoned about 
+
+**Lecture 4: Basic SQL syntax.**
+
+Mainly declarative
+
+2 parts:
+
+- Data Definition Language (DDL). Schema and constrains
+
+- Data Manipulation Language (DML). Querying
+
+SQL language is case-insensitive. 
+
+USE db_name: make db_name default database for current connection 
+
+CREATE: CREATE TABLE t_name {
+  attr1 domain1,
+  attr2 domain2,
+  ...
+  PRIMARY KEY (attr1, attr2, ...)
+}
+
+Common domain types: CHAR(N), VARCHAR(N), INT, NUMERIC(P, D), DOUBLE PRECISION (an approximation), FLOAT(N), DATE, TIME, TIMESTAMP, BLOB, CLOB, TEXT
+
+INSERT INTO db_name (col_names)? VALUES (value1, value2, ...). Can specify which attributes in INSERT.
+
+DELETE FROM t_name WHERE? ...;
+
+DROP TABLE - DROP DATABASE 
+
+SELECT attr1, attr2, ... FROM table1, table2, ... WHERE ...;
+
+- relations are multisets, duplicates remain
+
+- Can rename attribute, table_name with AS 
+
+- Use LIKE for pattern matching in WHERE 
+
+- If tables have overlapping attr, use t_name.attr_name to distinguish 
+
+Set operations:
+
+- select1 UNION select2 
+
+- select1 INTERSECT select2
+
+- select1 EXCEPT select2 
+
+- Eliminates duplicates. Can keep duplicates by appending ALL to the set operations 
+
+*? means optional
