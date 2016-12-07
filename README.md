@@ -147,3 +147,51 @@ Set operations:
 - Eliminates duplicates. Can keep duplicates by appending ALL to the set operations 
 
 *? means optional
+
+**Lecture 5. SQL Queries.**
+
+General form is SELECT attr1, attr2, ... FROM table1, table2, ... WHERE P
+
+ORDER BY at the end of SELECT statement to order by attribute 
+
+Grouping & Aggregate functions in SQL (SUM, AVG, COUNT, MIN, MAX)
+
+- e.g. SELEcT AVG(balance) FROM account WHERE branch_name = 'New York'
+
+- SELECT attr1, attr2, ... , F1, F2, ... FROM t1, t2, ... WHERE P GROUP BY attr1, attr2, ... Notice the grouping attributes appear type. If the group attributes do not appear immediately after SELECT, they won't be in schema. 
+
+- WHERE clause is applied before any group occurs. To apply filter after grouping, use HAVING.
+
+- Use DISTINCT to eliminate duplicates 
+
+- COUNT(\*) counts total number of tuples, do not ignore NULL. To ignore NULL, use COUNT(attr)
+
+Nested subqueries
+
+- A single query can only perform 1 agg function 
+
+- Scalar subquery: one attr and one tuple, automatically unpack value when compared against
+
+Subqueries in WHERE and HAVING clause
+
+- Set membership test: IN, NOT IN (less freq: ANY, SOME, ALL)
+
+- Empty set test: EXISTS, NOT EXISTS 
+
+- Uniqueness test: UNIQUE, NOT UNIQUE 
+
+Correlated queries: when a nested query refers to the enclosing query's attributes. Slow and sometimes decorrelated automatically by database. Avoid if performance suffers.
+
+Subqueries in FROM Clause:
+
+- Used to compute a result in multiple steps. Query against a subquery's result (called a derived relation)
+
+- Subquery in FROM clause must be given a name
+
+More Data Manipulation Operation:
+
+- INSERT INTO table ... VALUES / SELECTED ... 
+
+- DELETE FROM table WHERE? ...
+
+- UPDATE table SET attr1=val1, attr2=val2, ... WHERE P
